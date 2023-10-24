@@ -119,7 +119,7 @@ Datum der Abgabe: \\
     {\setunit{\addcomma\space}\printfield{postnote}}}
 \DeclareCiteCommand{\vglparencite}[\mkbibparens]
   {\usebibmacro{prenote}}
-  {vgl.~\usebibmacro{citeindex}
+  {vgl.\usebibmacro{citeindex}
    \usebibmacro{cite}}
   {\multicitedelim}
   {\usebibmacro{comma-postnote}}
