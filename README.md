@@ -2,12 +2,12 @@
 
 Dieses Repository enthält eine LaTeX-Vorlage für Hausarbeiten an der Philosophischen Fakultät der Universität Erfurt.
 
-Diese Vorlage gehorcht im Großen und Ganzen den Vorgaben, die [hier](https://www.uni-erfurt.de/philosophische-fakultaet/seminare-professuren/philosophie/geschichte-der-philosophie) im Abschnitt "Hinweise für Hausarbeiten" zu finden sind. Sie sorgt v.a. für die korrekte Formatierung des Deckblatts und des Literaturverzeichnisses. Außerdem stellt sie die folgenden Befehle zur Verfügung:
+Diese Vorlage gehorcht im Großen und Ganzen den Vorgaben, die [hier](https://www.uni-erfurt.de/philosophische-fakultaet/seminare-professuren/philosophie/geschichte-der-philosophie) im Abschnitt "Hinweise für Hausarbeiten" zu finden sind. Sie sorgt v.a. für die korrekte Formatierung des Deckblatts und des Literaturverzeichnisses. Dafür stellt sie die folgenden Befehle zur Verfügung:
 - `\cite[<Seitenzahl>]{<bib-Code>}` erzeugt einen Nachweis für direkte Zitate im Format '(Mustermann, 12)'
 - `\vglcite[<Seitenzahl>]{<bib-Code>}` erzeugt einen Nachweis für indirekte Zitate im Format '(vgl. Mustermann, 12)'
 - `\blockzitat{<Text des Blockzitats>}` formatiert einen Text als Blockzitat
 
-Die Nutzung kanonischer Zitierweisen ist etwas umständlich, aber möglich. Die Dateien `beispiel.tex` und `literatur.bib` enthalten ein Beispiel für ein Zitat mit kanonischer Zitierweise.
+Die Nutzung kanonischer Zitierweisen ist etwas umständlich, aber möglich. Die Dateien `beispiel.tex` und `literatur.bib` enthalten ein Beispiel für ein Zitat nach kanonischer Zitierweise.
 
 ### Installation
 
