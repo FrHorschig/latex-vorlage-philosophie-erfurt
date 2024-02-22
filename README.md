@@ -19,3 +19,12 @@ Alternativ kann man auch einfach die Beispieldateien als Ausgangspunkt nehmen.
 
 ### Ergänzungen und Verbesserungen sind willkommen!
 Für Ergänzungen oder Verbesserungen einfach einen Pull Request oder im Tab "Issues" eine neue Aufgabe erstellen.
+
+# Hausarbeiten schreiben mit Markdown
+
+Mit [Markdown](https://www.markdownguide.org/cheat-sheet/) kann man Formatierungsanweisungen im Text minimal halten. Mit einem geeigneten Markdown-Editor (z.B. [Zettlr](https://www.zettlr.com/) oder [Obsidian](https://obsidian.md/)) wird der Markdown-Syntax direkt entfernt und stattdessen der Text formatiert angezeigt. Dadurch kann man sich beim Schreiben ganz auf den Inhalt des Textes konzentrieren, ohne von Formatierungsarbeiten abgelenkt zu werden, und trotzdem die Formatierungen, die für die Bedeutung des Textes wichtig sind (z.B. *Hervorhebungen*), beim Schreiben sehen.
+
+Um die Arbeit mit Markdown und LaTeX einfacher zu machen, gibt es neben dem LaTeX-Template auch ein [Python](https://www.python.org/)-Skript, um den Markdown-Text in LaTeX-Code umzuwandeln. Das Skript ist sehr rudimentär, folgende Umwandlungen sind damit möglich:
+- Asterisk-Paare werden in einen `\emph`-Befehl umgewandelt, z.B. aus `*Hervorbehung aus mehreren Wörtern*` wird `\emph{Hervorbehung aus mehreren Wörtern}`
+- bib-Codes (mit oder ohne Seitenzahl, 'f.' oder 'ff.' nach der Zahl sind ebenfalls möglich) innerhalb eckiger Klammern (z.B. `[MyBibCode 123f.]`) werden in einen `\cite`-Befehl umgewandelt, wenn die Zitation auf ein `"` folgt, andernfalls wird sie in ein `\vglcite` umgewandelt
+- Überschriften mit `###` werden in `\section`-, Überschriften mit `#####` in `\subsection`-Befehle umgewandelt
