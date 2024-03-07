@@ -25,3 +25,5 @@ Um die Arbeit mit Markdown und LaTeX einfacher zu machen, gibt es neben dem LaTe
 - Asterisk-Paare werden in einen `\emph`-Befehl umgewandelt, z.B. aus `*Hervorbehung aus mehreren Wörtern*` wird `\emph{Hervorbehung aus mehreren Wörtern}`
 - ein bib-Code (mit oder ohne Seitenzahl, 'f.' oder 'ff.' nach der Zahl sind ebenfalls möglich) innerhalb eckiger Klammern (z.B. `[MyBibCode 123f.]`) wird in einen `\cite`-Befehl umgewandelt, wenn die Zitation auf ein `"` folgt, andernfalls wird er in ein `\vglcite` umgewandelt
 - Überschriften mit `###` werden in `\section`-, Überschriften mit `#####` in `\subsection`-Befehle umgewandelt
+
+Zeilen, die mit "- " beginnen, werden beim Umwandeln ignoriert. Damit kann man im Text Notizen einfügen, die im finalen Text nicht sichtbar sind.
