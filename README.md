@@ -27,3 +27,7 @@ Um die Arbeit mit Markdown und LaTeX einfacher zu machen, gibt es neben dem LaTe
 - Überschriften mit `###` werden in `\section`-, Überschriften mit `#####` in `\subsection`-Befehle umgewandelt
 
 Zeilen, die mit "- " beginnen, werden beim Umwandeln ignoriert. Damit kann man im Text Notizen einfügen, die im finalen Text nicht sichtbar sind.
+
+# Kontakt
+
+Für Verbesserungsvorschläge einfach einen Pull Request erstellen oder eine [E-Mail](mailto:frhorschig@mailbox.org) schreiben.
