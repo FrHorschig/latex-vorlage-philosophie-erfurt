@@ -65,7 +65,12 @@
     Philosophisches Seminar der Universität Erfurt \\
     \@semester \\
     \vspace{2.5cm}
-    {\Large\textbf{\@title}} \\
+    {\Large\textbf{\@title}} \\ 
+    {
+        \vspace{0.3cm}
+        \normalsize
+        \textbf{\@subtitle}
+    } \\
     \vspace{2.5cm}
 
     Hausarbeit vorgelegt von: \\
