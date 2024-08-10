@@ -5,7 +5,7 @@ Dieses Repository enthält eine LaTeX-Vorlage für Hausarbeiten an der Philosoph
 Diese Vorlage gehorcht im Großen und Ganzen den Vorgaben, die [hier](https://www.uni-erfurt.de/philosophische-fakultaet/seminare-professuren/philosophie/geschichte-der-philosophie) im Abschnitt "Hinweise für Hausarbeiten" zu finden sind. Sie sorgt v.a. für die korrekte Formatierung des Deckblatts und des Literaturverzeichnisses. Dafür stellt sie die folgenden Befehle zur Verfügung:
 - `\cite[<Seitenzahl>]{<bib-Code>}` erzeugt einen Nachweis für direkte Zitate im Format '(Mustermann, 12)'
 - `\vglcite[<Seitenzahl>]{<bib-Code>}` erzeugt einen Nachweis für indirekte Zitate im Format '(vgl. Mustermann, 12)'
-- `\blockzitat{<Text des Blockzitats>}` formatiert einen Text als Blockzitat
+- `\blockzitat{<Text des Blockzitats>}` formatiert einen Text als Blockzitat (damit der das Blockzitat enthaltene Absatz korrekt formatiert wird, muss vor und nach dem Blockzitat eine leere Zeile eingefügt werden)
 
 Die Nutzung kanonischer Zitierweisen ist etwas umständlich, aber möglich. Die Dateien `beispiel.tex` und `literatur.bib` enthalten Beispiele für Zitate nach kanonischer Zitierweise.
 
@@ -19,12 +19,12 @@ Alternativ kann man auch einfach die Beispieldateien als Ausgangspunkt nehmen.
 
 # Hausarbeiten schreiben mit Markdown
 
-Mit [Markdown](https://www.markdownguide.org/cheat-sheet/) kann man sehr einfach Formatierungsanweisungen zum Text hinzufügen. Mit einem geeigneten Markdown-Editor (z.B. [Zettlr](https://www.zettlr.com/) oder [Obsidian](https://obsidian.md/)) wird der Markdown-Syntax direkt entfernt und stattdessen der Text formatiert angezeigt. Dadurch kann man sich beim Schreiben ganz auf den Inhalt des Textes konzentrieren, ohne von Formatierungsarbeiten abgelenkt zu werden, und trotzdem die Formatierungen, die für die Bedeutung des Textes wichtig sind (z.B. *Hervorhebungen*), beim Schreiben sehen.
+Mit [Markdown](https://www.markdownguide.org/cheat-sheet/) kann man sehr einfach Formatierungsanweisungen zum Text hinzufügen. Mit einem geeigneten Markdown-Editor (z.B. [Zettlr](https://www.zettlr.com/) oder [Obsidian](https://obsidian.md/)) wird der Markdown-Syntax direkt entfernt und stattdessen der Text formatiert angezeigt. Dadurch kann man sich beim Schreiben ganz auf den Inhalt des Textes konzentrieren, ohne von Formatierungsarbeiten abgelenkt zu werden, und trotzdem die Formatierungen, die für die Bedeutung des Textes wichtig sind (z.B. *Hervorhebungen*), auch schon beim Schreiben sehen.
 
 Um die Arbeit mit Markdown und LaTeX einfacher zu machen, gibt es neben dem LaTeX-Template auch ein [Python](https://www.python.org/)-Skript, um den Markdown-Text in LaTeX-Code umzuwandeln. Das Skript ist sehr rudimentär, folgende Umwandlungen sind damit möglich:
 - Asterisk-Paare werden in einen `\emph`-Befehl umgewandelt, z.B. aus `*Hervorbehung aus mehreren Wörtern*` wird `\emph{Hervorbehung aus mehreren Wörtern}`
 - ein bib-Code (mit oder ohne Seitenzahl, 'f.' oder 'ff.' nach der Zahl sind ebenfalls möglich) innerhalb eckiger Klammern (z.B. `[MyBibCode 123f.]`) wird in einen `\cite`-Befehl umgewandelt, wenn die Zitation auf ein `"` folgt, andernfalls wird er in ein `\vglcite` umgewandelt
-- Überschriften mit `###` werden in `\section`-, Überschriften mit `#####` in `\subsection`-Befehle umgewandelt
+- Überschriften mit `##` werden in `\section`-, Überschriften mit `#####` in `\subsection`-Befehle umgewandelt
 
 Zeilen, die mit "- " beginnen, werden beim Umwandeln ignoriert. Damit kann man im Text Notizen einfügen, die im finalen Text nicht sichtbar sind.
 

@@ -63,7 +63,7 @@ def process_lines(input_file, output_file):
                 continue
             elif line.startswith("#####"):
                 line = r"\subsection{" + line[5:].strip() + "}\n"
-            elif line.startswith("###"):
+            elif line.startswith("##"):
                 line = r"\section{" + line[3:].strip() + "}\n"
             elif line.startswith("\\break"):
                 line = "\\bigbreak\n\\noindent\n"
