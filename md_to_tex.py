@@ -5,6 +5,7 @@ begin = """\documentclass{hausarbeit_philosophie}
 \\addbibresource{literatur.bib}
 
 \\title{Titel der Hausarbeit}
+\\subtitle{Untertitel der Hausarbeit}
 \\semester{Sommer-/Wintersemester 20xy/20xy}
 \\name{Vorname Name}
 \\matrikelnummer{Matrikelnummer}
@@ -74,8 +75,10 @@ def process_lines(input_file, output_file):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) < 2:
-        print("Please provide the input filename as an argument.")
+    if len(sys.argv) < 3:
+        print(
+            "Bitte gib den Pfad zur Input-md-Datei und den Pfad zur Output-tex-Datei an."
+        )
         sys.exit(1)
 
     input_filename = sys.argv[1]
