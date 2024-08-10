@@ -14,7 +14,7 @@ begin = """\documentclass{hausarbeit_philosophie}
 \\veranstaltung{Titel der Veranstaldung}
 \\dozent{Titel und Namen der Dozentin/des Dozenten}
 \\modul{Modulbezeichnung}
-\\leistungart{Modulprüfung, qualifizierte Teilnahme}
+\\leistungsart{Modulprüfung, qualifizierte Teilnahme}
 \\abgabe{\\today}
 \\zeichenzahl{Anzahl der Zeichen ohne Leerzeichen}
 

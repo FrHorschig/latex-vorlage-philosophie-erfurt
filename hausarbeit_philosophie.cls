@@ -39,7 +39,7 @@
 \newcommand{\@veranstaltung}{}
 \newcommand{\@dozent}{}
 \newcommand{\@modul}{}
-\newcommand{\@leistungart}{}
+\newcommand{\@leistungsart}{}
 \newcommand{\@abgabe}{}
 \newcommand{\@zeichenzahl}{}
 \newcommand{\semester}[1]{\renewcommand{\@semester}{#1}}
@@ -51,7 +51,7 @@
 \newcommand{\veranstaltung}[1]{\renewcommand{\@veranstaltung}{#1}}
 \newcommand{\dozent}[1]{\renewcommand{\@dozent}{#1}}
 \newcommand{\modul}[1]{\renewcommand{\@modul}{#1}}
-\newcommand{\leistungart}[1]{\renewcommand{\@leistungart}{#1}}
+\newcommand{\leistungsart}[1]{\renewcommand{\@leistungsart}{#1}}
 \newcommand{\abgabe}[1]{\renewcommand{\@abgabe}{#1}}
 \newcommand{\zeichenzahl}[1]{\renewcommand{\@zeichenzahl}{#1}}
 
@@ -87,7 +87,7 @@
     \vspace{1cm}
 
     Art der Leistung: \\
-    \@leistungart \\
+    \@leistungsart \\
     \vspace{1cm}
 
     Datum der Abgabe: \\
