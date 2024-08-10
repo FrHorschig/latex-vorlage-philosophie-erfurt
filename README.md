@@ -23,10 +23,15 @@ Mit [Markdown](https://www.markdownguide.org/cheat-sheet/) kann man sehr einfach
 
 Um die Arbeit mit Markdown und LaTeX einfacher zu machen, gibt es neben dem LaTeX-Template auch ein [Python](https://www.python.org/)-Skript, um den Markdown-Text in LaTeX-Code umzuwandeln. Das Skript ist sehr rudimentär, folgende Umwandlungen sind damit möglich:
 - Asterisk-Paare werden in einen `\emph`-Befehl umgewandelt, z.B. aus `*Hervorbehung aus mehreren Wörtern*` wird `\emph{Hervorbehung aus mehreren Wörtern}`
-- ein bib-Code (mit oder ohne Seitenzahl, 'f.' oder 'ff.' nach der Zahl sind ebenfalls möglich) innerhalb eckiger Klammern (z.B. `[MyBibCode 123f.]`) wird in einen `\cite`-Befehl umgewandelt, wenn die Zitation auf ein `"` folgt, andernfalls wird er in ein `\vglcite` umgewandelt
+- ein bib-Code (mit oder ohne Seitenzahl, 'f.' oder 'ff.' nach der Zahl sind ebenfalls möglich) innerhalb eckiger Klammern (z.B. `[MyBibCode 123f.]`) wird in einen `\cite`-Befehl umgewandelt, wenn die Zitation auf ein `"` folgt, andernfalls wird er in ein `\vglcite` umgewandelt (HINWEIS: Da Blockzitate direkte Zitate sind, aber keine Anführungszeichen enthalten, werden bib-Codes in eckigen Klammern innerhalb von Blockzitaten in `\vglcite`-Befehle umgewandeln. Das muss man manuell korrigieren.)
 - Überschriften mit `##` werden in `\section`-, Überschriften mit `#####` in `\subsection`-Befehle umgewandelt
 
 Zeilen, die mit "- " beginnen, werden beim Umwandeln ignoriert. Damit kann man im Text Notizen einfügen, die im finalen Text nicht sichtbar sind.
+
+Das Skript kann mit folgendem Befehl aufgerufen werden:
+```
+python md_to_tex.py <Pfad/zur/Inputdatei.md> <Pfad/zur/Outputdatei.tex>
+```
 
 # Kontakt
 
