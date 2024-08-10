@@ -138,6 +138,7 @@
     \fontsize{11}{13.6}\selectfont\setstretch{1.0}
     \begin{quote} #1 \end{quote}
     \@afterindentfalse\@afterheading
+    \vspace{-0.2cm}
 }}
 \makeatother
 % Remove page prefixes ("S.") from bibliography entries
