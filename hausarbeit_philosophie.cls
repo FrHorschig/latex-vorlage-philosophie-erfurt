@@ -23,11 +23,10 @@
 \setlength{\parindent}{2.4em}
 \setstretch{1.5}
 % Move the page numbers to the right
-\RequirePackage{fancyhdr}
-\fancyhf{}
-\renewcommand{\headrulewidth}{0pt}
-\rfoot{\thepage}
-\pagestyle{fancy}
+\RequirePackage{scrlayer-scrpage}
+\clearpairofpagestyles
+\ofoot{\pagemark}
+\pagestyle{scrheadings}
 
 % Define fields and commands for setting fields
 \newcommand{\@semester}{}
