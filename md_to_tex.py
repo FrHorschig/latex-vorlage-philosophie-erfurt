@@ -59,13 +59,19 @@ def process_lines(input_file, output_file):
 
     with open(output_file, "w") as f:
         f.write(begin)
-        for line in lines:
+        for index, line in enumerate(lines):
             if line.startswith("- "):
                 continue
             elif line.startswith("#####"):
-                line = r"\subsection{" + line[5:].strip() + "}\n"
+                newline = ""
+                if index > 0 and lines[index - 1] != "\n":
+                    newline = "\n"
+                line = newline + r"\subsection{" + line[5:].strip() + "}\n"
             elif line.startswith("##"):
-                line = r"\section{" + line[3:].strip() + "}\n"
+                newline = ""
+                if index > 0 and lines[index - 1] != "\n":
+                    newline = "\n"
+                line = newline + r"\section{" + line[2:].strip() + "}\n"
             elif line.startswith("\\break"):
                 line = "\\bigbreak\n\\noindent\n"
             line = re.sub(r"\s*\*(.*?)\*\s*", r" \\emph{\1} ", line)

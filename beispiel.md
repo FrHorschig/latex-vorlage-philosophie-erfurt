@@ -1,4 +1,4 @@
-### Überschrift Kategorie 1 (Überschrift I)
+## Überschrift Kategorie 1 (Überschrift I)
 Das ist ein Absatz ohne Einzug. Der LaTeX-Compiler erzeugt jeden Absatz nach einer Überschrift als Absatz ohne Einzug.
 
 Das ist ein Absatz mit Einzug. Diese Formatierung werden Sie wahrscheinlich am häufigsten gebrauchen. Der Einzug dient der Abgrenzung zum vorangegangenen Absatz und hilft, den Fließtext gut lesen zu können. Betrachten Sie Absätze als Sinnabschnitte: Sie leiten einen Gedanken ein, führen diesen aus und leiten zum nächsten Gedanken bzw. Sinnabschnitt über. Absätze können unterschiedlich lang sein. Sie bestehen jedoch nie aus einem einzigen Satz. Vermeiden Sie außerdem seitenlange Absätze. Der LaTeX-Compiler fügt automatisch einen Einzug ein, wenn ein Absatz auf eine leere Zeile folgt.
